@@ -3,15 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TV Show Project | Ameneh Keshavarz (Ameneh-Keshavarz)</title>
+    <title>TV Show Project | Armin Nouri ArminNouri98</title>
     <link href="style.css" rel="stylesheet" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
-    <div id="root"></div>
+  <div id="root">
+    <div class="search-select-container">
+      <select id="show-selector">
+        <option value="">Select a Show</option>
+      </select>
+      <select id="episode-selector">
+      </select>
+      <input type="text" id="search-box" placeholder="Search..." />
+      <span id="search-count">Example text</span>
+    </div>
+    <div class="episodes-container">
+      <!-- Episode cards will go here -->
+    </div>
+    <button id="back-button" style="display: none;">Back to All Shows</button>
 
+  </div>
+
+    <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
     <script src="episodes.js"></script>
+
+    <!-- Loads YOUR javascript code -->
     <script src="script.js"></script>
   </body>
 </html>
